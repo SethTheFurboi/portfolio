@@ -1,0 +1,196 @@
+:root {
+    /* 
+    Old colors:
+    --defcolornottransparent:rgb(130, 215, 232);
+    --defcolortransparent: rgb(130, 215, 232, 0.5);
+    */
+    --defcolornottransparent:rgb(255, 150, 0);
+    --defcolortransparent: rgb(200, 150, 0, 0.5);
+    --darkgrey: rgb(51, 66, 74);
+    --black: rgb(0,0,0);
+    --white: #ffffff;
+  }
+
+* {
+    box-sizing: border-box;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    background-color: black;
+}
+
+.header {
+    background-color: black;
+    color: var(--white);
+}
+
+.header h1 {
+    display: inline-block;
+    font-size: 48px;
+    color: var(--darkgrey);
+    background-color: var(--defcolornottransparent);
+    padding-right: 1%;
+    text-align: right;
+    padding-left: 5%;
+}
+
+.top-image {
+    width: 100%;
+    height: 100%;
+    /* max-height: 300px; */
+}
+
+.small-image {
+    width: 100%;
+    max-height: 100%;
+    border: 5px solid var(--defcolortransparent);
+    background-color: var(--defcolortransparent);
+    opacity: 0.5;
+    transition: opacity 2s;
+}
+
+.big-image {
+    width: 100%;
+    max-height: 100%;
+    border: 5px solid var(--defcolortransparent);
+    background-color: var(--defcolortransparent);
+    opacity: 0.5;
+    transition: opacity 1s;
+}
+
+.small-image:hover {
+    opacity: 1;
+    overflow: hidden;
+}
+.big-image:hover {
+    overflow: hidden;
+    opacity: 1;
+}
+
+.tag {
+
+    width: 25%;
+    height: 5rem;
+    background-color: var(--defcolornottransparent);
+    position: relative; bottom: 5.5rem; left: 0.25rem;
+    font-size: 10px;
+
+}
+
+table {
+    width: 60%;
+    border-collapse: separate; 
+    border-spacing: 2em;
+    margin-left: auto;
+    margin-right: auto;
+    /* 
+    was intentionally gonna go to the right, but I scrapped that
+    float: right; 
+    */
+}
+
+.centered-text {
+
+    text-align: center;
+    color: var(--defcolornottransparent);
+
+}
+
+.title-text {
+
+    text-decoration: underline var(--defcolornottransparent);
+    text-decoration-thickness: 20%;
+    text-underline-offset: 40%;
+    margin-top: 2rem;
+    margin-bottom: 1.5rem;
+
+}
+
+.header div {
+    padding-top: 15px;
+    margin-right: 20px;
+    float: right;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 20px;
+}
+
+.header div ul {
+    list-style-type: none;
+}
+
+.header div ul li {
+    display: inline-block;
+    margin-left: 25px;
+}
+
+.footer div ul {
+    list-style-type: none;
+}
+.footer div ul li {
+    display: inline-block;
+    margin-left: 25px;
+}
+
+.header a {
+    color: var(--defcolornottransparent);
+    text-decoration: underline var(--defcolornottransparent);
+    text-decoration-thickness: 20%;
+    text-underline-offset: 40%;
+}
+
+.footer li {
+
+        color: var(--darkgrey);
+        text-decoration: underline var(--darkgrey);
+        text-decoration-thickness: 20%;
+        text-underline-offset: 40%;
+}
+
+p {
+    font-size: 16px;
+}
+
+.float-left {
+    float: left;
+    margin-right: 25px;
+}
+
+.float-right {
+    float: right;
+    margin-left: 25px;
+}
+
+.content {
+    width: 75%;
+    display: inline-block;
+    margin-left: 20px;
+}
+
+.footer {
+    padding: 30px;
+    clear: both;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    text-align: center;
+    color: var(--darkgrey);
+}
+
+.footer h2 {
+    font-size: 20px;
+}
+
+@media screen and (max-width: 768px) {
+
+    .tag {
+
+        font-size: 5px;
+        height: 2rem;
+        position: relative; bottom: 2.5rem;
+    
+    }
+
+
+
+  }
